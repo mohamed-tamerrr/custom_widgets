@@ -1,4 +1,5 @@
-import 'package:custom_widgets/widgets/hero_banner.dart';
+import 'package:custom_widgets/widgets/egy_flag.dart';
+
 import 'package:flutter/material.dart';
 
 class EmptyView extends StatelessWidget {
@@ -7,16 +8,11 @@ class EmptyView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: .center,
-        children: [
-          HeroBanner(
-            imageAsset: 'assets/images/Image.png',
-            caption:
-                'منظومة التأمين والملف الصحي الرقمي المعتمد',
-          ),
-          SizedBox(height: 20),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: .center,
+          children: [EgyptFlag()],
+        ),
       ),
     );
   }
